@@ -3,10 +3,47 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Контакты</title>
+    <style>
+    h1{
+        text-align: center;
+       }
+    </style>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1 style="margin-top: 50px;">Контакты</h1>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-5">
+        <div class="row mt-5">
+          <div class="card" style="width: 30rem; padding: 20px;">
+            <form>
+              <div class="mb-3">
+                <label for="validationCustom01" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="validationCustom01">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Почта</label>
+                <div class="input-group">
+                   <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <h3 style="margin-top: 50px;">Наши контакты</h3>
+        <p class="lh-1">Первый параграф, очень много текста на картинке, поэтому напишу просто такой текст для примера</p>
+        <p class="lh-1">Второй параграф</p>
+      </div>
+    </div>
   </body>
 </html>
